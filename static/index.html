@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="icon" href="../favicons/163-1634065_master-ball-sprite-png-png-download-pokeball-pixel.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <script defer src="../js/script.js"></script>
+</head>
+<body>
+    <h1>
+        <img src="../img/Pokédex_logo.png" alt="">
+    </h1>
+    <main>
+        <img src="#" alt="pokemon" class="pokemon__image">
+
+        <h1 class="pokemon__data">
+            <span class="pokemon__number"></span>
+            <span class="pokemon__name"></span>
+        </h1>
+
+        <form class="form">
+            <input type="search" class="input__search" placeholder="Name or Number" required> <!--SEARCH: PARA BARRA DE PESQUISA,PLACEHOLDER: PESQUISAR POR NOME OU NUMEROM REQUIRED: OBRIGATORIO O PREENCHIMENTO -->
+        </form>
+
+        <div class="buttons">
+            <button class="button btn-prev"> &lt; Prev  </button>
+            <button class="button btn-next">Next &gt; </button>
+        </div>
+
+        <div class="buttonSy">
+            <button class="button_shiny">
+                Form Shiny
+            </button>
+        </div>
+
+        <img src="../img/pokedexm.png" alt="Pokedex" class="pokedex">
+
+    </main>
+
+    <main2>
+        <h1 style="font-family: Verdana, Geneva, Tahoma, sans-serif;" >Stats</h1>
+        <div class="BigBox">
+        
+            <h2>Type:</h2>
+            <span class="pokemon__type"></span>
+            <span class="pokemon__type2"> </span>
+            <h3>Ability:</h3>
+            <span class="pokemon__ability"> </span>
+            <h3>HP:</h3>
+            <span class="pokemon__hp"> </span>
+            <h3>Attack:</h3>
+            <span class="pokemon__attack"> </span>
+            <h3>Defense:</h3>
+            <span class="pokemon__defense"> </span>
+            <h3>Special-Attack:</h3>
+            <span class="pokemon__specialA"> </span>
+            <h3>Special-Defense:</h3>
+            <span class="pokemon__specialD"> </span>
+            <h3>Speed:</h3>
+            <span class="pokemon__speed"> </span>
+            
+
+
+            
+        </div>
+    </main2>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>Informaçoes Utilizadas da PokeAPI</p> 
+            <ul class="social-links">
+                <a href="https://github.com/PedroAllison">Github</a>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

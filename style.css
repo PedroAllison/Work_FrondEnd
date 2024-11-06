@@ -1,0 +1,143 @@
+@import url('https://fonts.cdnfonts.com/css/pokemon-Hollow');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ /*MEXENDO NO CORPO DO SITE*/
+body{
+    text-align: center;
+    background: linear-gradient(to bottom, #6ab7f5, #fff);
+    min-height: 100vh;
+}
+ /*MEXENDO NA POKEDEX IMAGEM*/
+main{
+    display: inline-block;
+    margin-top: 2%;
+    padding: 15px;
+    position: relative;
+}
+
+main2{
+    display: inline-block;
+    margin-top: 2%;
+    padding: 15px;
+    position: fixed;
+}
+
+.BigBox{
+
+        width: 350px; /* Largura da caixa */
+        height: 400px; /* Altura da caixa */
+        background-color: #d4d4d4; /* Cor de fundo */
+        border: 2px solid #333; /* Borda com espessura e cor */
+        padding: 20px; /* Espaço interno dentro da caixa */
+        box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para destacar a caixa */
+        border-radius: 8px; /* Arredonda as bordas */
+    
+}
+
+.pokedex{
+    width: 100%; /*ISSO FAZ COM QUE NÃO PERCA O TAMANHO DA IMAGEM SE FOR PARA CELULAR OU PC*/
+    max-width: 425px;
+}
+
+/*IMAGEM DO POKEMON NA POKEDEX*/
+.pokemon__image{
+    position: absolute;
+    bottom: 55%;
+    left: 50%;
+    transform: translate(-63%, 20%);
+    height: 20%;
+}
+
+.pokemon__data{
+    position: absolute;
+    font-weight: 600;
+    color: #aaa;
+    top: 54.5%;
+    right: 27%;
+    font-size: clamp(8px, 5vw, 25px); /*PARA A FONTE FICAR DE ACORDO COM OS PARAMETROS DO SITE*/
+
+}
+
+.pokemon__name{
+    color: #3a444d ;
+    text-transform: capitalize; /*CAPITALIZE: SÓ A 1º LETRA É MAIUSCULA, UPPERCASE & LOWCASE DA PRA USAR TBM*/
+}
+
+.form{
+    position: absolute;
+    background-color: red;
+    width: 65%;
+    top: 65%;
+    left: 13.5%
+}
+
+.input__search{
+    width: 100%;
+    padding: 4%;
+    outline: none; /*TIRA A BARRA AZUL AO REDOR DO PESQUISA*/
+    border: 2px solid #333;
+    border-radius: 5px;
+    font-weight: 600;
+    color: #3a444d;
+    font-size: clamp(8px, 5vw, 1rem);
+    box-shadow: -3px 4px 0 #4d4d4d;
+}
+
+.buttons{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    width: 65%;
+    transform: translate(-57%, 0);
+    display: flex;
+    gap: 20px;
+}
+.button{
+    width: 50%;
+    padding: 4%;
+    border: 2px solid #000;
+    border-radius: 5px;
+    font-size: clamp(8px, 5vw, 1rem);
+    font-weight: 600;
+    color: #fff;
+    background-color: #444;
+    box-shadow: -2px 3px 0 #222; 
+}
+
+.button:active{
+    box-shadow: inset -4px 4px 0 #222;
+    font-size:0.9rem ;
+}
+
+
+.buttonSy{
+    position: absolute;
+    bottom: 22%;
+    left: 50%;
+    width: 30%;
+    display: flex;
+    gap: 20px;
+    
+}
+
+.button_shiny{
+    width: 80%;
+    padding: 4%;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+    font-size: clamp(8px, 5vw, 1rem);
+    font-weight: 600;
+    color: #fff;
+    background-color: #14a800;
+    box-shadow: -2px 3px 0 #222; 
+}
+
+.button_shiny:active{
+    box-shadow: inset -4px 4px 0 #0a5500;
+    font-size:0.9rem ;
+}
+
